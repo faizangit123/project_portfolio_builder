@@ -1,0 +1,148 @@
+/* Hero Section Styles */
+.hero-section {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 1.5rem;
+  background: linear-gradient(180deg, var(--preview-card) 0%, var(--preview-bg) 100%);
+  position: relative;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.hero-blob {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 400px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  opacity: 0.1;
+  filter: blur(100px);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background-color: var(--preview-card);
+  border: 1px solid var(--preview-border);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.hero-badge-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.hero-badge-text {
+  font-size: 0.875rem;
+  color: var(--preview-muted);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--preview-fg);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+  transition: color 0.3s ease;
+}
+
+.hero-role {
+  font-size: 1.75rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+}
+
+.hero-tagline {
+  font-size: 1.125rem;
+  color: var(--preview-muted);
+  max-width: 40rem;
+  margin: 0 auto;
+  line-height: 1.7;
+  transition: color 0.3s ease;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.hero-btn-primary {
+  padding: 0.75rem 2rem;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: var(--primary-foreground);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 0 40px rgba(245, 158, 11, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.hero-btn-primary:hover {
+  transform: scale(1.05);
+}
+
+.hero-btn-secondary {
+  padding: 0.75rem 2rem;
+  background-color: var(--preview-card);
+  color: var(--preview-fg);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  border: 1px solid var(--preview-border);
+  transition: all 0.3s ease;
+}
+
+.hero-btn-secondary:hover {
+  background-color: var(--preview-border);
+}
+
+@media (min-width: 768px) {
+  .hero-name {
+    font-size: 4rem;
+  }
+  .hero-role {
+    font-size: 2rem;
+  }
+  .hero-tagline {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-name {
+    font-size: 4.5rem;
+  }
+  .hero-role {
+    font-size: 2.5rem;
+  }
+}

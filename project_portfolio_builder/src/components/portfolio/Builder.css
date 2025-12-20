@@ -1,0 +1,13 @@
+/* Builder Container Styles */
+.builder {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+}
+
+@media (min-width: 1024px) {
+  .builder {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,124 @@
+/* About Section Styles */
+.about-section {
+  padding: 4rem 1.5rem;
+  background-color: var(--preview-bg);
+  transition: background-color 0.3s ease;
+}
+
+.about-container {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--preview-fg);
+  margin-top: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.about-image-container {
+  width: 12rem;
+  height: 12rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: linear-gradient(180deg, var(--preview-card) 0%, var(--preview-bg) 100%);
+  border: 2px solid var(--preview-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(30, 41, 59, 0.08);
+  transition: all 0.3s ease;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-icon {
+  width: 6rem;
+  height: 6rem;
+  color: var(--preview-muted);
+  opacity: 0.4;
+  transition: color 0.3s ease;
+}
+
+.about-text-content {
+  flex: 1;
+}
+
+.about-bio {
+  font-size: 1.125rem;
+  color: var(--preview-muted);
+  line-height: 1.7;
+  transition: color 0.3s ease;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.about-stat {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--preview-card);
+  transition: background-color 0.3s ease;
+}
+
+.about-stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-stat-label {
+  font-size: 0.875rem;
+  color: var(--preview-muted);
+  transition: color 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    flex-direction: row;
+  }
+  
+  .about-image-container {
+    width: 16rem;
+    height: 16rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+  }
+}

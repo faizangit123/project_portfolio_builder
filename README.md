@@ -32,9 +32,30 @@ responsive UI design — making it ideal for **freshers and beginners**.
 
 ## 🌐 Live Demo
 
-🔗 Live Demo: https://portfolio-five-pi-1kbxqgeljf.vercel.app/
+🔗 Live Demo: https://project-portfolio-builder.vercel.app/
 
 ---
+
+🔄 All updates are reflected **instantly** in the preview.
+
+---
+
+## 👁 Live Preview Panel
+
+<img width="1920" height="1080" alt="Screenshot 2025-12-20 134902" src="https://github.com/user-attachments/assets/d66ff8a6-df95-4b74-b650-352c49d4e37b" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-20 134921" src="https://github.com/user-attachments/assets/3637add9-4a01-41b0-9c81-0a19355b5755" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-20 134949" src="https://github.com/user-attachments/assets/29782823-37ef-4975-bd14-6809e26a9122" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-20 134955" src="https://github.com/user-attachments/assets/c547ead4-698f-43c4-b90f-add8a4998812" />
+
+The **PreviewPanel** renders the complete portfolio layout including:
+
+- Hero Section  
+- About Section  
+- Skills Section  
+- Projects Section  
+- Contact Section  
+
+No refresh required — changes update in **real time**.
 
 ## ✨ Features
 
@@ -135,21 +156,7 @@ The **FormPanel** allows users to update:
 - Project details  
 - Contact information  
 
-🔄 All updates are reflected **instantly** in the preview.
 
----
-
-## 👁 Live Preview Panel
-
-The **PreviewPanel** renders the complete portfolio layout including:
-
-- Hero Section  
-- About Section  
-- Skills Section  
-- Projects Section  
-- Contact Section  
-
-No refresh required — changes update in **real time**.
 
 ---
 

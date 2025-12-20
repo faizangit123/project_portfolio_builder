@@ -105,26 +105,24 @@ C:.
     ├── Index.jsx
     ├── NotFound.css
     └── NotFound.jsx
-
-
----
+```
 
 ## 🧠 State Management
 
-- Centralized state handled using **React `useState`**
+- Centralized state handled using React useState
+
 - Portfolio data stored as a single object
-- State and update handlers passed via **props**
+
+- State and update handlers passed via props
+
 - Any form update instantly reflects in the preview panel
 
-This clearly demonstrates **one-way data flow in React**.
+- This clearly demonstrates one-way data flow in React.
 
----
+##📝 Dummy Portfolio Data
 
-## 📝 Dummy Portfolio Data
-
-All initial portfolio data is stored separately for clarity:
-
-```js
+- All initial portfolio data is stored separately for clarity:
+```
 {
   hero: {
     name: "John Doe",
@@ -145,126 +143,143 @@ All initial portfolio data is stored separately for clarity:
     phone: "1234567890"
   }
 }
-
+```
 ## 🖌 Form Panel
 
-The **FormPanel** allows users to update:
+- The FormPanel allows users to update:
 
-- Name & professional role  
-- About / bio section  
-- Skills list  
-- Project details  
-- Contact information  
+- Name & professional role
 
+- About / bio section
 
+- Skills list
 
----
+- Project details
+
+- Contact information
 
 ## 🎨 Styling & UI
 
-- Styled using **plain CSS**
-- Clean and modern portfolio layout
-- No external UI libraries
-- Easy to customize and extend
+- Styled using plain CSS
 
----
+- Clean and modern portfolio layout
+
+- No external UI libraries
+
+- Easy to customize and extend
 
 ## 📱 Responsive Design
 
 - Mobile-first design approach
-- Fully responsive on:
-  - Desktop
-  - Tablet
-  - Mobile
-- Implemented using **CSS media queries**
 
----
+- Fully responsive on:
+
+- Desktop
+
+- Tablet
+
+- Mobile
+
+- Implemented using CSS media queries
 
 ## 🧪 Beginner-Friendly Code
 
 - Simple functional components
+
 - Clean folder structure
+
 - Meaningful variable and component names
+
 - Well-commented code
+
 - No advanced or confusing patterns
-
-✅ Perfect for **learning and interviews**.
-
----
 
 ## 🎯 Purpose of This Project
 
-This project was built to:
+**This project was built to:**
 
 - Showcase frontend development skills
-- Demonstrate React fundamentals
-- Practice props and state management
-- Build a live preview-based application
-- Create a professional, recruiter-friendly project
 
----
+- Demonstrate React fundamentals
+
+- Practice props and state management
+
+- Build a live preview-based application
+
+- Create a professional, recruiter-friendly project
 
 ## 🛠 Tech Stack
 
-- **Frontend**: React, JavaScript (JSX)
-- **Styling**: CSS
-- **State Management**: React `useState`
-- **Animations**: Framer Motion
-- **Icons**: React Icons
+- Frontend: React, JavaScript (JSX)
 
----
+- Styling: CSS
+
+- State Management: React useState
+
+- Icons: React Icons
 
 ## 🚀 Getting Started
-
-### Prerequisites
+Prerequisites
 
 - Node.js (v18 or higher)
-- npm or yarn
-
-### Installation
-
-```bash
+```
+npm or yarn
+```
+**Installation**
+```
 npm install
+```
+**Run Development Server**
+```
+npm start
+```
+
+## Open in browser:
+-  http://localhost:3000
 
 ## 🧩 Customization Guide
 
-- Update default data in `dummyPortfolioData.js`
-- Modify section components to change layout or content
-- Customize styles in the `styles/` folder
-- Easily add new sections such as **Experience** or **Education**
+- Update default data in dummyData.js
 
----
+Modify section components to change layout or content
+
+Customize styles in the component CSS files
+
+Easily add new sections such as Experience or Education
 
 ## 🚀 Deployment
 
-This project can be deployed using:
+**This project can be deployed using:**
 
-- **Vercel** (Recommended)
-- **Netlify**
-- **GitHub Pages**
+- Vercel (Recommended)
 
----
+- Netlify
+
+- GitHub Pages
 
 ## 📈 Resume Value
 
-This project demonstrates:
+**This project demonstrates:**
 
 - React component architecture
+
 - Props and state handling
+
 - Real-time UI updates
+
 - Responsive web design
+
 - Clean, maintainable frontend code
 
-💼 A strong addition to any **frontend developer portfolio**.
+# 💼 A strong addition to any frontend developer portfolio.
 
----
+**📬 Contact**
 
-## 📬 Contact
+- GitHub: https://github.com/faizangit123
 
-- **GitHub**: https://github.com/faizangit123  
-- **LinkedIn**: https://www.linkedin.com/in/md-faizan-97705b348/  
-- **Email**: faizanrock705@gmail.com  
+- LinkedIn: https://www.linkedin.com/in/md-faizan-97705b348/
 
----
+- Email: faizanrock705@gmail.com
 
-Made with ❤️ by **Faizan**
+**Made with ❤️ by Faizan**
+

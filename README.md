@@ -42,7 +42,7 @@ responsive UI design — making it ideal for **freshers and beginners**.
 ## 👁 Live Preview Panel
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/05bab694-ed78-4ade-942d-b029d362cc68" />
-<img width="1920" height="1080" alt="Screenshot 2025-12-20 134921" src="https://github.com/user-attachments/assets/3637add9-4a01-41b0-9c81-0a19355b5755" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/8d82993f-00fd-42d2-b8fa-d00f51090571" />
 <img width="1920" height="1080" alt="Screenshot 2025-12-20 134949" src="https://github.com/user-attachments/assets/29782823-37ef-4975-bd14-6809e26a9122" />
 <img width="1920" height="1080" alt="Screenshot 2025-12-20 134955" src="https://github.com/user-attachments/assets/c547ead4-698f-43c4-b90f-add8a4998812" />
 

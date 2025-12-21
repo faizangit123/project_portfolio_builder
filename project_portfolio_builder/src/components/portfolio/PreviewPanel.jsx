@@ -1,4 +1,6 @@
 // Live preview panel that renders the portfolio layout
+import { useRef, useState } from "react";
+import html2pdf from "html2pdf.js";
 import "./PreviewPanel.css";
 import HeroSection from "./HeroSection";
 import AboutSection from "./AboutSection";
@@ -27,7 +29,49 @@ const MoonIcon = () => (
   </svg>
 );
 
+const DownloadIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+    <polyline points="7 10 12 15 17 10" />
+    <line x1="12" y1="15" x2="12" y2="3" />
+  </svg>
+);
+
 const PreviewPanel = ({ data, isDarkMode, onToggleDarkMode }) => {
+  const contentRef = useRef(null);
+  const [isExporting, setIsExporting] = useState(false);
+
+  const handleExportPDF = async () => {
+    if (!contentRef.current || isExporting) return;
+    
+    setIsExporting(true);
+    
+    const opt = {
+      margin: 0,
+      filename: `${data.hero.name || 'portfolio'}-portfolio.pdf`,
+      image: { type: 'jpeg', quality: 0.98 },
+      html2canvas: { 
+        scale: 2,
+        useCORS: true,
+        logging: false
+      },
+      jsPDF: { 
+        unit: 'in', 
+        format: 'a4', 
+        orientation: 'portrait' 
+      },
+      pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+    };
+
+    try {
+      await html2pdf().set(opt).from(contentRef.current).save();
+    } catch (error) {
+      console.error('PDF export failed:', error);
+    } finally {
+      setIsExporting(false);
+    }
+  };
+
   return (
     <div className={`preview-panel ${isDarkMode ? 'dark-mode' : ''}`}>
       <div className="preview-header">
@@ -42,6 +86,15 @@ const PreviewPanel = ({ data, isDarkMode, onToggleDarkMode }) => {
           </div>
           <div className="preview-header-right">
             <button 
+              className="export-btn"
+              onClick={handleExportPDF}
+              disabled={isExporting}
+              title="Export as PDF"
+            >
+              <DownloadIcon />
+              <span>{isExporting ? 'Exporting...' : 'Export PDF'}</span>
+            </button>
+            <button 
               className="theme-toggle-btn"
               onClick={onToggleDarkMode}
               title={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
@@ -55,7 +108,7 @@ const PreviewPanel = ({ data, isDarkMode, onToggleDarkMode }) => {
         </div>
       </div>
       
-      <div className="preview-content">
+      <div className="preview-content" ref={contentRef}>
         <HeroSection data={data.hero} />
         <AboutSection data={data.about} />
         <SkillsSection skills={data.skills} />

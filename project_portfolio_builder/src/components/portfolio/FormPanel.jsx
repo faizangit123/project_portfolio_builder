@@ -57,6 +57,14 @@ const TrashIcon = () => (
   </svg>
 );
 
+const UploadIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+    <polyline points="17 8 12 3 7 8" />
+    <line x1="12" y1="3" x2="12" y2="15" />
+  </svg>
+);
+
 // Collapsible section component
 const FormSection = ({ title, icon: Icon, children, defaultOpen = true }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
@@ -194,14 +202,49 @@ const FormPanel = ({ data, onUpdate }) => {
             />
           </div>
           <div className="form-field">
-            <label className="form-label">Profile Image URL</label>
-            <input
-              type="text"
-              className="form-input"
-              value={data.about.imageUrl}
-              onChange={(e) => updateAbout("imageUrl", e.target.value)}
-              placeholder="https://example.com/photo.jpg"
-            />
+            <label className="form-label">Profile Image</label>
+            <div className="image-upload-container">
+              {data.about.imageUrl && (
+                <div className="image-preview">
+                  <img src={data.about.imageUrl} alt="Profile preview" />
+                  <button 
+                    type="button" 
+                    className="image-remove-btn"
+                    onClick={() => updateAbout("imageUrl", "")}
+                  >
+                    <TrashIcon />
+                  </button>
+                </div>
+              )}
+              <label className="image-upload-btn">
+                <UploadIcon />
+                <span>{data.about.imageUrl ? 'Change Image' : 'Upload Image'}</span>
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={(e) => {
+                    const file = e.target.files?.[0];
+                    if (file) {
+                      const reader = new FileReader();
+                      reader.onload = (event) => {
+                        updateAbout("imageUrl", event.target?.result);
+                      };
+                      reader.readAsDataURL(file);
+                    }
+                  }}
+                />
+              </label>
+              <div className="image-url-divider">
+                <span>or paste URL</span>
+              </div>
+              <input
+                type="text"
+                className="form-input"
+                value={data.about.imageUrl?.startsWith('data:') ? '' : data.about.imageUrl}
+                onChange={(e) => updateAbout("imageUrl", e.target.value)}
+                placeholder="https://example.com/photo.jpg"
+              />
+            </div>
           </div>
         </FormSection>
 

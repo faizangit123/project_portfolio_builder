@@ -2,7 +2,7 @@
 
 export const dummyPortfolioData = {
   hero: {
-    name: "Alex Johnson",
+    name: "MD FAIZAN",
     role: "Frontend Developer",
     tagline: "Crafting beautiful, responsive web experiences with modern technologies",
   },
@@ -24,28 +24,28 @@ export const dummyPortfolioData = {
       title: "E-Commerce Dashboard",
       description: "A responsive admin dashboard for managing online store products, orders, and analytics with real-time data visualization.",
       technologies: ["React", "TypeScript", "Chart.js"],
-      link: "https://github.com/alexjohnson/ecommerce-dashboard",
+      link: "https://project-portfolio-builder.vercel.app/",
     },
     {
       id: "2",
       title: "Weather App",
       description: "A beautiful weather application with location-based forecasts, hourly predictions, and dynamic backgrounds based on conditions.",
       technologies: ["React", "API Integration", "CSS"],
-      link: "https://github.com/alexjohnson/weather-app",
+      link: "https://project-portfolio-builder.vercel.app/",
     },
     {
       id: "3",
       title: "Task Management Tool",
       description: "A Kanban-style project management tool with drag-and-drop functionality, team collaboration, and deadline tracking.",
       technologies: ["React", "Redux", "Node.js"],
-      link: "https://github.com/alexjohnson/task-manager",
+      link: "https://project-portfolio-builder.vercel.app/",
     },
   ],
   contact: {
-    email: "alex.johnson@email.com",
+    email: "faizanrock705@gmail.com",
     phone: "+1 (555) 123-4567",
-    linkedin: "linkedin.com/in/alexjohnson",
-    github: "github.com/alexjohnson",
-    location: "San Francisco, CA",
+    linkedin: "https://www.linkedin.com/in/md-faizan-97705b348/",
+    github: "https://github.com/faizangit123",
+    location: "New Delhi, Delhi",
   },
 };

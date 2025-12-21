@@ -11,7 +11,7 @@ and recruitment purposes only.
 If you are a recruiter or interviewer and would like to discuss
 this project in detail, feel free to contact me.
 
-![React](https://img.shields.io/badge/React-18-blue)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/05bab694-ed78-4ade-942d-b029d362cc68" />
 ![Live%20Preview](https://img.shields.io/badge/Live%20Preview-Yes-green)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)
 ![Beginner%20Friendly](https://img.shields.io/badge/Beginner-Friendly-orange)

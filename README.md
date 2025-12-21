@@ -11,7 +11,6 @@ and recruitment purposes only.
 If you are a recruiter or interviewer and would like to discuss
 this project in detail, feel free to contact me.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/05bab694-ed78-4ade-942d-b029d362cc68" />
 ![Live%20Preview](https://img.shields.io/badge/Live%20Preview-Yes-green)
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-brightgreen)
 ![Beginner%20Friendly](https://img.shields.io/badge/Beginner-Friendly-orange)
@@ -42,7 +41,7 @@ responsive UI design — making it ideal for **freshers and beginners**.
 
 ## 👁 Live Preview Panel
 
-<img width="1920" height="1080" alt="Screenshot 2025-12-20 134902" src="https://github.com/user-attachments/assets/d66ff8a6-df95-4b74-b650-352c49d4e37b" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/05bab694-ed78-4ade-942d-b029d362cc68" />
 <img width="1920" height="1080" alt="Screenshot 2025-12-20 134921" src="https://github.com/user-attachments/assets/3637add9-4a01-41b0-9c81-0a19355b5755" />
 <img width="1920" height="1080" alt="Screenshot 2025-12-20 134949" src="https://github.com/user-attachments/assets/29782823-37ef-4975-bd14-6809e26a9122" />
 <img width="1920" height="1080" alt="Screenshot 2025-12-20 134955" src="https://github.com/user-attachments/assets/c547ead4-698f-43c4-b90f-add8a4998812" />

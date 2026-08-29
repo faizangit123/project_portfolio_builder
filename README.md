@@ -108,14 +108,14 @@ C:.
 
 - This clearly demonstrates one-way data flow in React.
 
-##📝 Dummy Portfolio Data
+## 📝 Dummy Portfolio Data
 
 - All initial portfolio data is stored separately for clarity:
 ```
 {
   hero: {
-    name: "John Doe",
-    role: "Frontend Developer"
+    name: "Your name",
+    role: "Frontend Developer"/"Backend Developer"
   },
   about: {
     bio: "A passionate fresher learning React and modern web development."
@@ -123,12 +123,12 @@ C:.
   skills: ["HTML", "CSS", "JavaScript", "React"],
   projects: [
     {
-      title: "Portfolio Builder",
+      title: "Portfolio Builder"/"Developer learnig platform"
       description: "A live portfolio generator built with React."
     }
   ],
   contact: {
-    email: "john@example.com",
+    email: "your@example.com",
     phone: "1234567890"
   }
 }
@@ -223,9 +223,6 @@ npm install
 npm start
 ```
 
-## Open in browser:
--  http://localhost:3000
-
 ## 🧩 Customization Guide
 
 - Update default data in dummyData.js
@@ -270,5 +267,4 @@ Easily add new sections such as Experience or Education
 
 - Email: faizanrock705@gmail.com
 
-**Made with ❤️ by Faizan**
 

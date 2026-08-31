@@ -128,8 +128,8 @@ C:.
     }
   ],
   contact: {
-    email: "your@example.com",
-    phone: "1234567890"
+    email: "youremail@example.com",
+    phone: "+91 1232343434"
   }
 }
 ```
@@ -222,16 +222,6 @@ npm install
 ```
 npm start
 ```
-
-## 🧩 Customization Guide
-
-- Update default data in dummyData.js
-
-Modify section components to change layout or content
-
-Customize styles in the component CSS files
-
-Easily add new sections such as Experience or Education
 
 ## 🚀 Deployment
 
